@@ -2,4 +2,9 @@
     <string name="app_name">ViewPagerwithNavComponentStS</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_one">Fragment One</string>
+    <string name="go_two">Go Two</string>
+    <string name="how_do_you_do_how_much_random_color">how do you do, how much, random color</string>
+    <string name="fragment_two">Fragment Two</string>
+    <string name="go_three">Go Three</string>
 </resources>
