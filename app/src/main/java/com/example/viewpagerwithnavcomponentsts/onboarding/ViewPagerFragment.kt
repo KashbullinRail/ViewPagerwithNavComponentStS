@@ -10,11 +10,11 @@ import com.example.viewpagerwithnavcomponentsts.R
 import com.example.viewpagerwithnavcomponentsts.onboarding.screens.FirstScreen
 import com.example.viewpagerwithnavcomponentsts.onboarding.screens.SecondScreen
 import com.example.viewpagerwithnavcomponentsts.onboarding.screens.ThirdScreen
+import kotlinx.android.synthetic.main.fragment_view_pager.view.*
 
 
 class ViewPagerFragment : Fragment(R.layout.fragment_view_pager) {
 
-//    private val viewPager:ViewPager by lazy { requireActivity().findViewById(R.id.viewPager) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +34,8 @@ class ViewPagerFragment : Fragment(R.layout.fragment_view_pager) {
             lifecycle
         )
 
-            view.findViewById<ViewPager>(R.id.viewPager).adapter = adapter
+
+        view.viewPager.adapter = adapter
 
         return view
     }
