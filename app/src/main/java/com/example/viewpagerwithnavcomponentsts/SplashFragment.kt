@@ -17,8 +17,6 @@ class SplashFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-
         Handler().postDelayed( {
             if (onBoardingFinished()){
                 findNavController().navigate(R.id.action_splashFragment_to_honeFragment)
@@ -30,7 +28,7 @@ class SplashFragment : Fragment() {
     }
 
     private fun onBoardingFinished(): Boolean {
-        val sharedPref = requireActivity().getSharedPreferences("", Context.MODE_PRIVATE)
+        val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("finish", false)
     }
 
