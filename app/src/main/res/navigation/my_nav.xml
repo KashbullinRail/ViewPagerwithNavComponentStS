@@ -9,5 +9,26 @@
         android:id="@+id/splashFragment"
         android:name="com.example.viewpagerwithnavcomponentsts.SplashFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" />
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_honeFragment"
+            app:destination="@id/honeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.viewpagerwithnavcomponentsts.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_honeFragment"
+            app:destination="@id/honeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/honeFragment"
+        android:name="com.example.viewpagerwithnavcomponentsts.HoneFragment"
+        android:label="fragment_hone"
+        tools:layout="@layout/fragment_hone" />
 </navigation>
